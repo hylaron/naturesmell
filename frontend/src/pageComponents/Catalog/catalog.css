@@ -1,0 +1,114 @@
+.catalog {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FDE8CD;
+    padding-top: 120px;
+
+}
+
+.catalog .container {
+    height: 100%;
+    display:  flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-gap: 60px 20px;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.catalog__product-card {
+    padding: 20px;
+    border-radius: 20px;
+    width: 309px;
+    max-width: 309px;
+    
+}
+
+.catalog__product-card--img:hover img{
+    transform:translateY(30px);
+    transition: 0.3s;
+}
+.catalog__product-card--img img{
+    cursor: pointer;
+    transform:translateY(110px);
+    transition: 0.3s;}
+
+
+.catalog__product-card--img {
+    position: relative;
+    height: 200px;
+    border-radius: 80px 80px 0px 0px;
+
+    -webkit-box-shadow: 0px 0px 24px 22px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0px 0px 24px 22px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0px 0px 24px 22px rgba(0, 0, 0, 0.2) inset;
+    
+}
+
+
+.catalog__product-card--img--background{
+    height: 269px;
+    width: 100%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    top: -10px;
+    border-radius: 300px;
+    position: absolute;
+    
+
+}
+
+.catalog__product-card--img img{
+    z-index: 0;
+    position: absolute;
+    top: -80px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.catalog__product-card__content {
+    position: relative;
+    z-index: 1;
+
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-gap: 20px; 
+    padding: 10px 20px;
+    border-radius: 0 0 10px 10px;
+
+    -webkit-box-shadow: 0px 0px 14px 12px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0px 0px 14px 12px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0px 0px 14px 10px rgba(0, 0, 0, 0.2) ;
+}
+.catalog__product-card__content--name {
+    text-align: center;
+}
+
+.catalog__product-card__content__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.catalog__product-card__content__block--button {
+    height: 40px;
+    border-radius: 10px;
+    background-color: #6e5e48;
+    color: white;
+    border: none;
+
+    padding: 0 20px;
+
+    cursor: pointer;
+}
+
+@media (max-width: 713px) {
+    .catalog {
+        padding-top: 180px;
+    }
+}
